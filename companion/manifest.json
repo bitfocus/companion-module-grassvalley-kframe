@@ -1,26 +1,26 @@
 {
-	"id": "your-module-name",
-	"name": "your-module-name",
-	"shortname": "module-shortname",
-	"description": "A short one line description of your module",
-	"version": "0.0.0",
+	"id": "grassvalley-kframe",
+	"name": "GrassValley K-Frame Macro Player",
+	"shortname": "kframe ",
+	"description": "Control GrassValley K-Frame via UDP - Macros, AUX routing",
+	"version": "0.1.0",
 	"license": "MIT",
-	"repository": "git+https://github.com/bitfocus/companion-module-your-module-name.git",
-	"bugs": "https://github.com/bitfocus/companion-module-your-module-name/issues",
+	"repository": "git+https://github.com/bitfocus/companion-module-grassvalley-kframe.git",
+	"bugs": "https://github.com/bitfocus/companion-module-grassvalley-kframe/issues",
 	"maintainers": [
 		{
-			"name": "Your name",
-			"email": "Your email"
+			"name": "Vincent Berry",
+			"email": "vincentberry@outlook.fr"
 		}
 	],
 	"runtime": {
 		"type": "node22",
 		"api": "nodejs-ipc",
-		"apiVersion": "0.0.0",
+		"apiVersion": "1.12.0",
 		"entrypoint": "../dist/main.js"
 	},
 	"legacyIds": [],
-	"manufacturer": "Your company",
-	"products": ["Your product"],
-	"keywords": []
+	"manufacturer": "GrassValley",
+	"products": ["K-Frame"],
+	"keywords": ["grassvalley", "k-frame", "macro", "aux", "video", "broadcast"]
 }
