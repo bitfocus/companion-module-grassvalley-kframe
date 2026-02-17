@@ -3,7 +3,6 @@ import { CompanionPresetDefinitions, combineRgb } from '@companion-module/base'
 
 const COLOR_GREEN = combineRgb(0, 204, 0)
 const COLOR_WHITE = combineRgb(255, 255, 255)
-const COLOR_BLACK = combineRgb(0, 0, 0)
 const COLOR_DARK_BLUE = combineRgb(0, 0, 102)
 
 export function UpdatePresets(self: ModuleInstance): void {
