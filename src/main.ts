@@ -13,7 +13,6 @@ const FEEDBACK_CLEAR_DELAY = 500 // ms to show feedback before clearing
 export class ModuleInstance extends InstanceBase<ModuleConfig> {
 	config!: ModuleConfig
 	private udpConnection: UdpConnection | null = null
-	private connectionState: ConnectionState = ConnectionState.Disconnected
 
 	// Feedback state
 	lastMacroSent: number | null = null
@@ -113,35 +112,19 @@ export class ModuleInstance extends InstanceBase<ModuleConfig> {
 	 * Handle connection state changes
 	 */
 	private handleStateChange(state: ConnectionState): void {
-		this.connectionState = state
-
-		// Update connection status variable
-		let statusText = 'Unknown'
 		switch (state) {
 			case ConnectionState.Connected:
 				this.updateStatus(InstanceStatus.Ok)
-				statusText = 'Connected'
 				break
 			case ConnectionState.Connecting:
-				this.updateStatus(InstanceStatus.Connecting)
-				statusText = 'Connecting'
-				break
 			case ConnectionState.Handshaking:
-				this.updateStatus(InstanceStatus.Connecting)
-				statusText = 'Handshaking'
-				break
 			case ConnectionState.Reconnecting:
 				this.updateStatus(InstanceStatus.Connecting)
-				statusText = 'Reconnecting'
 				break
 			case ConnectionState.Disconnected:
 				this.updateStatus(InstanceStatus.Disconnected)
-				statusText = 'Disconnected'
 				break
 		}
-
-		this.setVariableValues({ connection_status: statusText })
-		this.checkFeedbacks('connection_status', 'connection_connected', 'connection_disconnected', 'connection_connecting')
 	}
 
 	/**
@@ -158,13 +141,6 @@ export class ModuleInstance extends InstanceBase<ModuleConfig> {
 	 */
 	private handleError(error: string): void {
 		this.log('error', `Connection error: ${error}`)
-	}
-
-	/**
-	 * Get current connection state
-	 */
-	getConnectionState(): ConnectionState {
-		return this.connectionState
 	}
 
 	/**

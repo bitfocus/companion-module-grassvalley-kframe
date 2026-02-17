@@ -7,7 +7,6 @@ Companion module for controlling GrassValley K-Frame video production systems vi
 - **Macro Recall**: Trigger macros 1-999 on the K-Frame
 - **AUX Routing**: Route sources (1-850) to AUX buses (1-96)
 - **Suite Switching**: Switch between suites (1A-4B)
-- **Connection Status**: Real-time feedback on connection state
 - **Auto-Reconnect**: Automatic reconnection with configurable retry attempts
 
 ## Configuration
@@ -29,20 +28,15 @@ Companion module for controlling GrassValley K-Frame video production systems vi
 
 ## Feedbacks
 
-| Feedback          | Description                             |
-| ----------------- | --------------------------------------- |
-| Connection Status | Changes style based on connection state |
-| Connected         | True when connected to K-Frame          |
-| Disconnected      | True when disconnected                  |
-| Connecting        | True when connecting or reconnecting    |
-| Macro Sent        | Briefly true when a macro is sent       |
-| AUX Sent          | Briefly true when an AUX route is sent  |
+| Feedback   | Description                            |
+| ---------- | -------------------------------------- |
+| Macro Sent | Briefly true when a macro is sent      |
+| AUX Sent   | Briefly true when an AUX route is sent |
 
 ## Presets
 
 The module includes pre-configured presets:
 
-- **Connection Status**: Button showing current connection state (green/yellow/red)
 - **Macro 1-10**: Quick access buttons for macros 1 through 10
 - **AUX Route Template**: Template for AUX routing
 

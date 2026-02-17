@@ -3,7 +3,7 @@
 	"name": "GrassValley K-Frame Macro Player",
 	"shortname": "kframe ",
 	"description": "Control GrassValley K-Frame via UDP - Macros, AUX routing",
-	"version": "0.1.0",
+	"version": "0.0.0",
 	"license": "MIT",
 	"repository": "git+https://github.com/bitfocus/companion-module-grassvalley-kframe.git",
 	"bugs": "https://github.com/bitfocus/companion-module-grassvalley-kframe/issues",
