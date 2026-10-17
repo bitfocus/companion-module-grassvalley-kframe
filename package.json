@@ -1,6 +1,6 @@
 {
 	"name": "companion-module-grassvalley-kframe",
-	"version": "2026.0.9",
+	"version": "2.0.0",
 	"main": "dist/main.js",
 	"type": "module",
 	"scripts": {

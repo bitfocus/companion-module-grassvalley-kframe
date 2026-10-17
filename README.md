@@ -1,12 +1,12 @@
-# Grass Valley KFrame Companion v2026.0.9
+# Grass Valley KFrame Companion v2.0.0
 
 Major-version Bitfocus Companion implementation based on the Grass Valley Stream Deck application.
 
 ## Versioning
 
 - Module id: `grassvalley-kframe` (the next version of the existing Bitfocus K-Frame module)
-- Internal project version: `2026.0.9.0` (announced to the frame; `src/version.ts`, checked against package.json by `test/repro-version.mjs`)
-- Companion package version: `2026.0.9` (SemVer)
+- Internal project version: `2.0.0.0` (announced to the frame; `src/version.ts`, checked against package.json by `test/repro-version.mjs`)
+- Companion package version: `2.0.0` (SemVer, per the [Bitfocus module versioning rules](https://companion.free/for-developers/git-workflows/versioning/#version-of-modules): major bump over 1.0.0 because stored actions are upgraded). Development builds before this release were numbered 2026.0.9.x; the sections below keep those numbers.
 
 ## Source baseline
 
@@ -16,7 +16,7 @@ Major-version Bitfocus Companion implementation based on the Grass Valley Stream
 
 ## Status
 
-Release 2026.0.9. Tested against Grass Valley V14 (UDP) and V18 (TCP) frame simulators across Suites 1–4.
+Release 2.0.0 (first published as 2026.0.9). Tested against Grass Valley V14 (UDP) and V18 (TCP) frame simulators across Suites 1–4.
 
 The release is prepared as the next version of `grassvalley-kframe` (1.0.0 is the current Bitfocus release) and keeps its module id. grassvalley-kframe 1.0.0 shipped no upgrade scripts, so every script here runs on its connections. The permanent upgrade script converts the former Macro/AUX action schemas, send-pulse feedbacks, configuration, and variable/expression values.
 

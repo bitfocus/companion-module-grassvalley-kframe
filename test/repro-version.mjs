@@ -1,6 +1,6 @@
 // Run after build: node --test test/repro-version.mjs
 // The version announced to the frame must follow package.json
-// (2026.0.9 -> 2026.0.9.0, 2026.0.9-beta.N -> 2026.0.9.N).
+// (2.0.0 -> 2.0.0.0, 2.0.0-beta.N -> 2.0.0.N).
 import assert from 'node:assert/strict'
 import { test } from 'node:test'
 import { readFileSync } from 'node:fs'
